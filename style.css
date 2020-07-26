@@ -1,0 +1,105 @@
+body {
+    background-color: black
+}
+
+.btnSub {
+    background: linear-gradient(80deg, rgba(80, 0, 0, 0.123), rgba(117, 0, 0, 0.329), rgba(189, 0, 0, 0.616), rgb(255, 32, 32));
+    background-size: 200% 200%;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px black;
+}
+
+.btnSub:hover {
+    animation-name: gradient;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.imgShadow {
+    -webkit-filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
+    filter: drop-shadow(1px 2px 1px rgb(0, 0, 0));
+}
+
+@keyframes gradient {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
+.navbar{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.575) 100%);
+    border:0;
+}
+
+.carousel {
+    height: 100vh;
+    width: 100%;
+    overflow:hidden;
+}
+.carousel .carousel-inner {
+    height:100%;    
+}
+
+.carousel-caption {
+    margin-bottom: 200px;
+}
+
+.signup {
+    margin: 0 auto;
+    width: 380px;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.315)!important;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.623)!important;
+}
+
+.form-input-css {
+    background-color: rgba(0, 0, 0, 0.274)!important;
+    color: white!important;
+    border: 0!important;
+    box-shadow: none!important;
+    transition: 0.1s;
+}
+
+.form-input-css:hover {
+    background-color: rgba(0, 0, 0, 0.438)!important;
+}
+
+.form-input-css:focus {
+    background-color: rgba(0, 0, 0, 0.685)!important;
+}
+
+::placeholder {
+    color: white!important;
+}
+
+h2, p {
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
+}
+
+.wake-up {
+    position: absolute;
+    animation-name: wakeup;
+    animation-duration: 1.5s;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@keyframes wakeup {
+    0%{background-color: rgb(0, 0, 0); z-index: 20;}
+    100%{background-color: transparent; z-index: 20;}
+}
