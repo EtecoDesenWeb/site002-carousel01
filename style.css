@@ -1,9 +1,9 @@
 body {
-    background-color: black
+    background-color: rgb(39, 39, 39)
 }
 
 .btnSub {
-    background: linear-gradient(80deg, rgba(80, 0, 0, 0.123), rgba(117, 0, 0, 0.329), rgba(189, 0, 0, 0.616), rgb(255, 32, 32));
+    background: linear-gradient(80deg, rgba(80, 0, 0, 0.123), rgba(255, 255, 255, 0.192), rgba(189, 189, 189, 0.342), rgba(255, 255, 255, 0.664));
     background-size: 200% 200%;
     padding: 10px 20px 10px 20px;
     color: white;
@@ -40,17 +40,14 @@ body {
     border:0;
 }
 
-.carousel {
+.carousel-item {
     height: 100vh;
-    width: 100%;
-    overflow:hidden;
-}
-.carousel .carousel-inner {
-    height:100%;    
-}
-
-.carousel-caption {
-    margin-bottom: 200px;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .signup {
@@ -83,11 +80,22 @@ body {
 }
 
 ::placeholder {
-    color: white!important;
+    color: rgb(218, 218, 218)!important;
+}
+
+.divForm-style {
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 30px;
 }
 
 h2, p {
     text-shadow: 1px 2px 1px rgb(0, 0, 0);
+}
+
+footer {
+    color: white;
+    text-shadow:
 }
 
 .wake-up {
@@ -102,4 +110,27 @@ h2, p {
 @keyframes wakeup {
     0%{background-color: rgb(0, 0, 0); z-index: 20;}
     100%{background-color: transparent; z-index: 20;}
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #747474;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b6b5b5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e4e4e4;
+}
+
+::-webkit-scrollbar-thumb:hover ~ ::-webkit-scrollba {
+    width: 25px;
 }
